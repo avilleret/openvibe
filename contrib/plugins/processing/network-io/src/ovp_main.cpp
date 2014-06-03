@@ -9,6 +9,10 @@
 
 // @END gipsa
 
+// @BEGIN OSCsender
+#include "OSCsender/ovpCBoxAlgorithmOSCsender.h"
+// @END OSCsender
+
 
 OVP_Declare_Begin();
 
@@ -19,5 +23,9 @@ OVP_Declare_Begin();
 #endif // TARGET_HAS_ThirdPartyLSL
 
 // @END gipsa
+
+// @BEGIN OSCsender
+	OVP_Declare_New(OpenViBEPlugins::AcquisitionAndNetworkIO::CBoxAlgorithmOSCsenderDesc);
+// @END OSCsender
 		 
 OVP_Declare_End();
